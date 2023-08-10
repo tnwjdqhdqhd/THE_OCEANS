@@ -9,8 +9,6 @@
     box-sizing: border-box;
 }
 #banner{
-    height: 450px;
-    background: url(../images/brand_banner.svg) no-repeat center center;
     z-index: 1;
 }
 #footer{
@@ -167,6 +165,11 @@
     color: #ED653E;
 }
 
+/* banner */
+.banner{
+    height: 450px;
+}
+
 /* footer */
 .footer{}
 .footer div{
@@ -174,14 +177,14 @@
     height: 140px;
 }
 .footer .f_logo{
-    margin-left: 200px;
+    padding-left: 200px;
     padding-top: 75px;
 }
 .footer .f_logo img{
     width: 70px;
 }
 .footer .f_sns{
-    margin-left: 198px;
+    padding-left: 198px;
     padding-bottom: 60px;
 }
 .footer .f_sns ul{
@@ -215,6 +218,7 @@
     text-align: center;
     display: block;
     font-weight: bold;
+    letter-spacing: 2px;
 }
 .footer .f_menu>ul>li>ul{
     margin-top: 30px;
