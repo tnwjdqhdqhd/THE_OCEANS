@@ -76,7 +76,9 @@
 
 /* brandLogo */
 #brandLogo{}
-.ex{}
+.ex{
+    margin: 0 239px;
+}
 .ex h3{
     font-size: 45px;
     margin-bottom: 40px;
@@ -84,8 +86,19 @@
     text-align: center;
     color: #0F396A;
 }
-.ex .exText{}
+.ex .exText{
+    width: 982px;
+    height: 350px;
+    border: 1px solid #225BBF;
+    font-size: 28px;
+    padding: 120px 0 0 120px;
+    float: left;
+}
 .ex .exText b{}
-.ex .exLogo{}
+.ex .exLogo{
+    float: right;
+    background-color: #68220e;
+}
 .ex .exLogo img{}
 .guide{}
+.guide {}
