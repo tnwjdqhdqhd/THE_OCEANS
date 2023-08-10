@@ -73,6 +73,10 @@ img{
     line-height: 65px;
     letter-spacing:normal;
     margin-bottom: 25px;
+    transition: all 0.3s;
+}
+.login .log a .btn:hover{
+    background-color: #ED653E;
 }
 .login .log .find{
     display: flex;
