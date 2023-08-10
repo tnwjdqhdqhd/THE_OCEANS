@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+#header{
+    border-bottom: 1px solid #fff;
+    /* background-color: #225BBF; */
+    
+}
+
+
+.container{
+    width: 1920px;
+    margin: 0 auto;
+    height: inherit;
+    position: relative;  
+}
+#banner>.container{
+    width: 100%;
+}
+
+/* header */
+.header{
+    height: 150px;
+    position: fixed;
+}
+
+.header .logo{
+    width: 1920px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    z-index: 50;
+    
+}
+.header .logo img{
+    width: 60px;
+}
