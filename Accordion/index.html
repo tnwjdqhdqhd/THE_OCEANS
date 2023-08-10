@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/base_style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./css/pavicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <div class="header">
+                    <div class="clock hea">
+                        <img src="./images/Clock_color.svg" alt="헤더 시계 이미지" class="cLeft">
+                    </div><!--//시계 끝-->
+                    <h1 class="logo hea">
+                        <img src="./images/logo_color.svg" alt="The Oceans 헤더 로고 이미지">
+                    </h1><!--// 헤더 로고 끝-->
+                    <div class="ticket hea">
+                        <span>
+                            <a href="#"><img src="./images/search_color.svg" alt="헤더 검색창 이미지"></a>
+                        </span>
+                        <span>
+                            <a href="#"><img src="./images/mypage_color.svg" alt="헤더 로그인창 이미지"></a>
+                        </span>
+                        <span>
+                            <a href="#"><img src="./images/ticket2.svg" alt=""></a>
+                        </span>
+                    </div><!--// 헤더 티켓 끝-->
+                </div><!--// 클레스 헤더 끝-->
+            </div><!--// 로우 끝-->
+        </div><!--// 컨테이너 끝-->
+    </div><!--// 아이디 헤더 끝-->
+    <div id="nav">
+        <div class="container">
+            <div class="row">
+                <nav class="nav clearfix">
+                    <ul class="clearfix">
+                        <li><a href="#">VISIT</a>
+                            <ul class="submenu">
+                                <li><a href="#">이용 시간</a></li>
+                                <li><a href="#">기프트샵</a></li>
+                                <li><a href="#">관람 가이드 맵</a></li>
+                                <li><a href="#">단체 예약</a></li>
+                                <li><a href="#">개인 예약</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">PROGRAM</a>
+                            <ul class="submenu">
+                                <li><a href="#">동물소개</a></li>
+                                <li><a href="#">체험 프로그램 예약</a></li>
+                                <li><a href="#">공연 티켓 예매</a></li>
+                                <li><a href="#">호텔 예약</a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">BRAND</a>
+                            <ul class="submenu">
+                                <li><a href="#">회사 소개</a></li>
+                                <li><a href="#">찾아오시는 길</a></li>
+                                <li><a href="#">HELP OUR OCEANS</a></li>
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">COMMUNITY</a>
+                            <ul class="submenu">
+                                <li><a href="#">자주 묻는 질문</a></li>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">이벤트</a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="log">
+                        <a href="#">LOGIN</a>
+                        <a href="#">JOIN</a>
+                    </div>
+                    <div class="navbg"></div>
+                </nav><!--// 클레스 네비 끝-->
+            </div><!--// 로우 끝-->
+        </div><!--// 컨테이너 끝-->
+    <!-- </div>// 아이디 네비 끝 -->
+    
+    <!-- banner -->
+    <div id="banner">
+        <div class="container">
+            <div class="banner">
+                <!-- <img src="./imgs/img_1.png" alt=""> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 아코디언 -->
+    <ul class="accordion">
+        <br><br>
+        <h1>궁금하신 점은 밑에 있는 <br>자주 묻는 질문에서 확인해보세요</h1><br><br><br><br><br>
+        <h2>THE OCEANS<br>자주 묻는 질문</h2><br><br><br>
+        <li>
+            <input type="radio" name="accordion" id="one" checked>
+            <label for="one">THE OCEANS 아쿠아리움 휴무는 언제인가요?</label>
+            <div class="content">
+                <p>THE OCEANS 아쿠아리움 휴무는 언제인가요?</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="two">
+            <label for="two">THE OCEANS 아쿠아리움 주차는 어떻게 하나요?</label>
+            <div class="content">
+                <p>THE OCEANS 아쿠아리움 주차는 어떻게 하나요?</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="third">
+            <label for="third">THE OCEANS 아쿠아리움 유모차 대여가 가능한가요?</label>
+            <div class="content">
+                <p>THE OCEANS 아쿠아리움 유모차 대여가 가능한가요?</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="fourth">
+            <label for="fourth">THE OCEANS 아쿠아리움 휠체어 대여가 가능한가요?</label>
+            <div class="content">
+                <p>THE OCEANS 아쿠아리움 휠체어 대여가 가능한가요?</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="five">
+            <label for="five">THE OCEANS 아쿠아리움의 ‘아쿠아리스트’가 되려면 어떻게 해야 하나요?</label>
+            <div class="content">
+                <p>THE OCEANS 아쿠아리움의 ‘아쿠아리스트’가 되려면 어떻게 해야 하나요?</p>
+            </div>
+        </li><br><br><br>
+        <h2>THE OCEANS<br>티켓 문의</h2><br><br><br>
+        <li>
+            <input type="radio" name="accordion" id="six">
+            <label for="six">온라인 티켓은 어떻게 사용하나요?</label>
+            <div class="content">
+                <p>온라인 티켓은 어떻게 사용하나요?</p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="seven">
+            <label for="seven">온라인 티켓 환불 규정이 어떻게 되나요?</label>
+            <div class="content">
+                <p></p>
+            </div>
+        </li><br><br><br>
+        <h2>THE OCEANS<br>연간 회원 문의</h2><br><br><br>
+        <li>
+            <input type="radio" name="accordion" id="eight">
+            <label for="eight">연간회원권의 취소나 유효기간은 어떻게 되나요?</label>
+            <div class="content">
+                <p></p>
+            </div>
+        </li>
+        <li>
+            <input type="radio" name="accordion" id="nine">
+            <label for="nine">연간회원은 주차가 무료인가요?</label>
+            <div class="content">
+                <p></p>
+            </div>
+        </li><br><br>
+        <h3>
+            찾으시는 내용이 없으신가요?<br>
+            원하시는 내용을 검색해보세요!<br><br>
+            문의 : 000-000-0000
+        </h3><br><br>
+        <li>
+            <input type="radio" name="accordion" id="ten">
+            <h4>검색하기</h4>
+            <div class="content">
+                <p></p>
+            </div>
+        </li>
+    </ul>
+    <!-- 아코디언 END -->
+
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer clearfix">
+                    <div class="f_logo">
+                        <img src="./images/logo_white.svg" alt="푸터 로고">
+                    </div>
+                    <div class="f_sns">
+                        <ul>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        </ul>
+                    </div><!--// 푸터 SNS-->
+                    <div class="f_menu">
+                        <ul class="clearfix">
+                            <li><a href="#">VISIT</a>
+                                <ul>
+                                    <li><a href="#">이용 시간</a></li>
+                                    <li><a href="#">기프트샵</a></li>
+                                    <li><a href="#">관람 가이드 맵</a></li>
+                                    <li><a href="#">단체 예약</a></li>
+                                    <li><a href="#">개인 예약</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">PROGRAM</a>
+                                <ul>
+                                    <li><a href="#">동물소개</a></li>
+                                    <li><a href="#">체험 프로그램 예약</a></li>
+                                    <li><a href="#">공연 티켓 예매</a></li>
+                                    <li><a href="#">호텔 예약</a></li>
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">BRAND</a>
+                                <ul>
+                                    <li><a href="#">회사 소개</a></li>
+                                    <li><a href="#">찾아오시는 길</a></li>
+                                    <li><a href="#">HELP OUR OCEANS</a></li>
+                                    <li><a href="#">연혁</a></li>
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">COMMUNITY</a>
+                                <ul>
+                                    <li><a href="#">자주 묻는 질문</a></li>
+                                    <li><a href="#">공지사항</a></li>
+                                    <li><a href="#">이벤트</a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div><!--// 푸터 메뉴-->
+                    <div class="f_copy">
+                        <p>2023 THE OCEANS by PROJECT 3 TEAM(조수정 채승병 어예진 박혜림 김용학 김수진) Portfolio <br> All right reserved</p>
+                    </div><!--// 푸터 카피라이터-->
+                </div><!--// 클레스 푸터 끝-->
+            </div><!--// 로우 끝-->
+        </div><!--// 컨테이너 끝-->
+    </div><!--// 아이디 푸터 끝-->
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        // base
+        // 네비게이션
+        $(".nav>ul>li").mouseover(function(){
+            $("nav>ul>li").find(".submenu").stop().slideDown(300);
+            $(".navbg").stop().slideDown(300);
+        });
+        $(".nav>ul>li").mouseleave(function(){
+            $("nav>ul>li").find(".submenu").stop().slideUp(300);
+            $(".navbg").stop().slideUp(300);
+        });
+    </script>
+</body>
+
+</html>
