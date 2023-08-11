@@ -1,2 +1,29 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: 'Josefin Sans', sans-serif, bold;
+    src:url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+  }
+html{overflow-Y:hidden;}
+body{
+    
+}
+#content{
+    position: relative;
+
+}
+article{}
+article img{
+    width: 100vw;
+}
+#content h1{
+    position: absolute;
+    left: 50%;
+    bottom: 80%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+#content h1 img{
+    width: 50%;
+}
