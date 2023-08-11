@@ -13,7 +13,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-left: 350px;
+    padding-left: 350px;
 }
 .banner span b{
     font-family: 'Josefin Sans', sans-serif;
@@ -40,15 +40,15 @@
     float: left;
     width: 430px;
     height: 430px;
-    margin: 0 55px 0 162px;
+    margin: 0 55px 0 306px;
 }
 .int .intImg img{}
 .int .intText{
     float: left;
-    width: 1111px;
+    width: 812px;
     height: 430px;
     border: 1px solid #225BBF;
-    padding: 50px 120px;
+    padding: 50px 60px;
 }
 .int .intText h3{
     font-size: 2.5rem;
@@ -63,11 +63,11 @@
     height: 1px;
     background-color: #0F396A;
     bottom: -10px;
-    left: 325px;
+    left: 235px;
 }
 .int .intText span{
     display: block;
-    margin-top: 50px;
+    margin-top: 30px;
     font-size: 1.4375rem;
     /* padding: 0 40px; */
     box-sizing: border-box;
@@ -86,7 +86,7 @@
 }
 .ex h3{
     font-size: 2.8125rem;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
     color: #0F396A;
@@ -97,7 +97,7 @@
     height: 350px;
     /* border: 1px solid #225BBF; */
     font-size: 1.4375rem;
-    padding: 120px 0px 0 0px;
+    padding-top: 80px;
     float: left;
     line-height: 1.4;
     /* background-color: #0F396A; */
@@ -116,11 +116,24 @@
     overflow: hidden;
     position: relative;
 }
-.guide .guLogo{
-
-}
+/* .guide::before{
+    content: "다운로드";
+    position: absolute;
+    bottom: 10px;
+    right: 200px;
+    color: #0F396A;
+    text-align: left;
+    width: 200px;
+    height: 75x;
+    border: 3px solid #0F396A;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 100px;
+    font-size: 1.875rem;
+} */
+.guide .guLogo{}
 .guide .guLogo ul{
-    padding-left: 162px;
+    padding-left: 306px;
 }
 .guide .guLogo ul li{
     background-color: #ED653E;
@@ -146,7 +159,7 @@
 .guide .guText{
     position: absolute;
     top: 50px;
-    right: 450px;
+    right: 420px;
 }
 .guide .guText h4{
     font-size: 2.5rem;
@@ -182,7 +195,7 @@
     padding-bottom: 100px;
 }
 .hoc .hocIcon{
-    margin-left: 162px;
+    margin-left: 200px;
 }
 .hoc .hocIcon ul{
     overflow: hidden;
@@ -191,7 +204,7 @@
     float: left;
     width: 465px;
     height: 475px;
-    margin-right: 98px;
+    margin-right: 70px;
     position: relative;
 }
 .hoc .hocIcon ul li:nth-of-type(1){
