@@ -1,24 +1,29 @@
 @charset "utf-8";
 
-img{
+*{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-#contents{}
-
+img{
+    box-sizing: border-box;
+}
 .row{}
 .login{
     margin-top: 250px;
-    padding-left: 305px;
+    /* padding-left: 360px; */
     margin-bottom: 250px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .login .image{
     float: left;
     margin-right: 50px;
     overflow: hidden;
     border-radius: 50px;
+    width: 670px;
 }
 .login .image img{
    width: 100%;
@@ -42,6 +47,7 @@ img{
 }
 .login .log .box{
     margin-top: 40px;
+    display: block;
 }
 .login .log .box .id{
     border: 1px solid #0F396A;
@@ -53,6 +59,7 @@ img{
     font-size: 24px;
     color: #dbdbdb;
     margin-bottom: 20px;
+    display: block;
 }
 .login .log .box .pw{
     border: 1px solid #0F396A;
@@ -64,6 +71,7 @@ img{
     font-size: 24px;
     color: #dbdbdb;
     margin-bottom: 40px;
+    display: block;
 }
 .login .log a .btn{
     background-color: #225BBF;
@@ -85,7 +93,7 @@ img{
 .login .log .find{
     display: flex;
     justify-content: center;
-    
+    width: 470px;
 }
 .login .log .find a{
    margin-right: 20px;

@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/base_style.css">
-    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/base_media.css">
     <link rel="shortcut icon" href="./images/pavicon.ico">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 <body>
     <div id="header">
@@ -36,6 +37,49 @@
                 </div><!--// 클레스 헤더 끝-->
             </div><!--// 로우 끝-->
         </div><!--// 컨테이너 끝-->
+        <div id="hamBtn">
+            <span></span>
+        </div><!--// 햄버거 메뉴 버튼-->
+        <div id="hamNav">
+            <ul>
+                <li><a href="#">VISIT</a>
+                    <ul class="submenu">
+                        <li><a href="#">이용 시간</a></li>
+                        <li><a href="#">기프트샵</a></li>
+                        <li><a href="#">관람 가이드 맵</a></li>
+                        <li><a href="#">단체 예약</a></li>
+                        <li><a href="#">개인 예약</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">PROGRAM</a>
+                    <ul class="submenu">
+                        <li><a href="#">동물소개</a></li>
+                        <li><a href="#">체험 프로그램 예약</a></li>
+                        <li><a href="#">공연 티켓 예매</a></li>
+                        <li><a href="#">호텔 예약</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">BRAND</a>
+                    <ul class="submenu">
+                        <li><a href="#">회사 소개</a></li>
+                        <li><a href="#">찾아오시는 길</a></li>
+                        <li><a href="#">HELP OUR OCEANS</a></li>
+                        <li><a href="#">연혁</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">COMMUNITY</a>
+                    <ul class="submenu">
+                        <li><a href="#">자주 묻는 질문</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">이벤트</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="hamLog">
+                <a href="login.html">LOGIN</a>
+                <a href="#">JOIN</a>
+            </div>
+        </div><!--// 햄버거 메뉴 내용 끝-->
     </div><!--// 아이디 헤더 끝-->
     <div id="nav">
         <div class="container">
@@ -100,8 +144,8 @@
                     <div class="log">
                         <strong>로그인</strong>
                         <div class="box">
-                            <div class="id">아이디를 입력해주세요</div>
-                            <div class="pw">비밀번호를 입력해주세요</div>
+                            <input type="text" id="id" class="id" style="color: black;" placeholder="아이디를 입력해주세요">
+                            <input type="password" id="pw" class="pw" style="color: black;" placeholder="비밀번호를 입력해주세요">   
                         </div>
                         <a href="#"><div class="btn">LOGIN</div></a>
                         <div class="find">
@@ -192,6 +236,26 @@
             $("nav>ul>li").find(".submenu").stop().slideUp(300);
             $(".navbg").stop().slideUp(300);
         });
-    </script>
+
+         //  햄버거 네비게이션
+         $("#hamBtn").click(function (e) {
+            e.preventDefault();
+            $("#hamNav").slideToggle("open");
+        });
+
+        $("#hamNav>ul>li").click(function (e) {
+            e.preventDefault();
+            $("#hamNav>ul>li>.submenu").stop().slideUp();
+            $(this).find(".submenu").stop().slideToggle();
+        });
+
+        // chatbot
+        (function () { var w = window; if (w.ChannelIO) { return w.console.error("ChannelIO script included twice."); } var ch = function () { ch.c(arguments); }; ch.q = []; ch.c = function (args) { ch.q.push(args); }; w.ChannelIO = ch; function l() { if (w.ChannelIOInitialized) { return; } w.ChannelIOInitialized = true; var s = document.createElement("script"); s.type = "text/javascript"; s.async = true; s.src = "https://cdn.channel.io/plugin/ch-plugin-web.js"; var x = document.getElementsByTagName("script")[0]; if (x.parentNode) { x.parentNode.insertBefore(s, x); } } if (document.readyState === "complete") { l(); } else { w.addEventListener("DOMContentLoaded", l); w.addEventListener("load", l); } })();
+
+            ChannelIO('boot', {
+                "pluginKey": "d401ea4f-f5c5-43b4-9976-7fc629584bdc"
+            });
+
+        </script>
 </body>
 </html>
