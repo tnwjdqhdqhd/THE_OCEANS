@@ -1,0 +1,344 @@
+@charset "utf-8";
+/* html{overflow-x:hidden;} */
+#header{
+    border-bottom: 1px solid #225BBF;
+    position: relative;
+}
+#nav{
+    height: 80px;
+    border-bottom: 1px solid #225BBF;
+    box-sizing: border-box;
+    position: relative;
+}
+#banner{
+    z-index: 1;
+}
+#footer{}
+
+.container{
+    width: 1920px;
+    margin: 0 auto;
+    height: inherit;
+    position: relative;
+}
+.row{}
+
+/* header */
+/* 수정 : 넓이 %로 수정 */
+.header{
+    overflow: hidden;
+}
+.header .hea{
+    float: left;
+}
+.header .clock{
+    width: 30%;
+    position: relative;
+    height: 150px;
+}
+.header .clock img{
+    width: 70%;
+    margin: 50px 0 0 64px;
+}
+.header .logo{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+.header .logo img{
+    height: 100px;
+}
+.header .ticket{
+    width: 30%;
+    height: 150px;
+    padding-left: 8%;
+}
+.header .ticket span{
+    float: left;
+    margin: 90px 30px 0 0;
+}
+.header .ticket span img{
+    width: 100%;
+}
+.header .ticket span:nth-of-type(1){
+    margin-left: 140px;
+    margin-top: 60px;
+}
+.header .ticket span:nth-of-type(2){
+    margin-top: 60px;
+}
+.header .ticket span:nth-of-type(3){
+    margin-right: 0;
+    transition: all 0.3s;
+}
+.header .ticket span:nth-of-type(3):hover{
+    transform: translateY(-33px);
+}
+
+/* hamNav */
+#hamBtn{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+#hamBtn span{
+    width: 30px;
+    height: 5px;
+    background-color: #225BBF;
+    display: block;
+}
+#hamBtn span::before, #hamBtn span::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    top: 10px;
+    left: 0;
+    background-color: #225BBF;
+}
+#hamBtn span::after{
+    top: 20px;
+}
+
+#hamNav{
+    position: absolute;
+    right: 0;
+    top: 100px;
+    width: 150px;
+    background-color: #225BBF;
+    height: calc(100vh - 100px);
+    z-index: 100;
+    display: none;
+}
+#hamNav.open{
+    display: block;
+}
+#hamNav>ul{
+    border-bottom: 1px solid #fff;
+}
+#hamNav>ul>li{
+    width: 100%;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+#hamNav>ul>li:nth-of-type(1){
+    border-top: 0;
+}
+#hamNav>ul>li>a{
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 15px 15px;
+    color: #fff;
+    text-align: left;
+}
+#hamNav>ul>li>.submenu{
+    height: auto;
+    display: none;
+    background-color: #fff;
+    /* overflow: hidden; */
+}
+#hamNav>ul>li>.submenu>li{
+    border-top: 1px solid #fff;
+}
+#hamNav>ul>li>.submenu>li>a{
+    display: block;
+    font-size: 0.875rem;
+    padding: 10px 30px;
+    color: #225BBF;
+    transition: all 0.3s;
+}
+#hamNav>ul>li>.submenu>li>a:hover{
+    color: #ED653E;
+    transform: scale(1.1);
+}
+#hamNav .hamLog{
+    position: absolute;
+    bottom: 5%;
+    right: 35%;
+}
+#hamNav .hamLog a{
+    color: #fff;
+    font-size: 0.875rem;
+    transition: all 0.3s;
+    text-align: center;
+    display: block;
+    height: 20px;
+}
+#hamNav .hamLog a:hover{
+    color: #ED653E;
+    transform: scale(1.1);
+}
+
+
+/* nav */
+.nav{
+    width: 100%;
+    position: relative;
+}
+.nav>ul{
+    padding-left: 360px;
+}
+.nav>ul>li{
+    float: left;
+    width: 300px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    position: relative;
+    transition: all 0.3s;
+    border-right: -1px;
+}
+.nav>ul>li>a{
+    background-color: #225BBF;
+    border-right: 1px solid #fff;
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #fff;
+    display: block;
+    width: 300px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.nav>ul>li>a:hover{
+    background-color: #ED653E;
+}
+.nav>ul>li>.submenu{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    z-index: 11;
+    height: 400px;
+    border-left: 1px solid #225BBF;   
+    width: 300px;
+    box-sizing: border-box;
+    display: none;
+}
+.nav>ul>li>.submenu>li{
+    width: 300px;
+    height: 80px;
+    background-color: #fff;
+    border-bottom: 1px solid #225BBF;  
+    border-right: 1px solid #225BBF;
+    border-right: -1px;
+    box-sizing: border-box;
+}
+.nav>ul>li>.submenu>li>a{
+    color: #225BBF;
+    font-size: 1.375rem;
+    display: block;
+    transition: all 0.3s;
+}
+.nav>ul>li>.submenu>li>a:hover{
+    color: #ED653E;
+    transform: scale(1.1);
+    font-weight: bold;
+}
+.nav .navbg{
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
+    position: absolute;
+    top: 80px;
+    z-index: 10;
+    display: none;
+}
+.nav .log{
+    position: absolute;
+    top: 25px;
+    right: 50px;
+}
+.nav .log a{
+    color: #225BBF;
+    font-size: 1.875rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+}
+.nav .log a:nth-of-type(1){
+    margin-right: 20px;
+}
+.nav .log a:hover{
+    color: #ED653E;
+}
+
+/* footer */
+.footer{
+    background: linear-gradient(to bottom, #225BBF 40%, #0F396A 100%);
+}
+.footer div{
+    width: 960px;
+    height: 140px;
+}
+.footer .f_logo{
+    padding-left: 200px;
+    padding-top: 75px;
+}
+.footer .f_logo img{
+    width: 70px;
+}
+.footer .f_sns{
+    padding-left: 198px;
+    padding-bottom: 60px;
+}
+.footer .f_sns ul{
+    overflow: hidden;
+}
+.footer .f_sns ul li{
+    float: left;
+    padding: 30px 10px 0 0;
+    font-size: 1.25rem;
+}
+.footer .f_sns ul li:nth-of-type(3){
+    padding-right: 0;
+}
+.footer .f_sns ul li a{
+    color: #fff;
+}
+.footer .f_menu{
+    height: 280px;
+    float: right;
+    margin-top: -280px;
+}
+.footer .f_menu>ul>li{
+    float: left;
+    padding: 40px 0 0 80px;
+    text-align: center;
+}
+.footer .f_menu>ul>li>a{
+    color: #fff;
+    font-size: 1.125rem;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.footer .f_menu>ul>li>ul{
+    padding-top: 30px;
+}
+.footer .f_menu>ul>li>ul>li{}
+.footer .f_menu>ul>li>ul>li>a{
+    color: #fff;
+    font-size: 0.875rem;
+    line-height: 30px;
+    display: block;
+    transition: all 0.3s;
+}
+.footer .f_menu>ul>li>ul>li>a:hover{
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
+}
+.footer .f_copy{
+    width: 1920px;
+    height: 120px;
+    border-top: 1px solid #fff;
+}
+.footer .f_copy p{
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 0.625em;
+    font-weight: lighter;
+}
