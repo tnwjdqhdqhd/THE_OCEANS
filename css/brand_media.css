@@ -4,6 +4,13 @@
     width: 100%;
   }
 }
+@media(max-width:1919px){
+  /* banner */
+  .banner span{
+    font-size:3.5vw;
+    padding-left: 10%;
+  }
+}
 @media(max-width:1024px) {
   /* introduce */
   .int{
@@ -96,7 +103,7 @@
   border-radius: 70px;
 }
 .guide .guText .down>span{
-  padding: 12% 0 0 10%;
+  padding: 10% 0 0 20%;
   font-size: 1.14rem;
 }
 
@@ -139,8 +146,6 @@
   bottom: 3%;
   white-space: nowrap;
 }
-
-
 }
 @media(max-width:768px){
   /* introduce */
@@ -226,10 +231,52 @@
     font-size: 2.5rem;
   }
 }
+@media(max-width:690px){
+  .int .intText h3::before {
+    left: 175px;
+}
+.int .intText {
+  height: 360px;
+}
+}
+@media(max-width:576px){
+  /* int */
+  .int {
+    margin: 20px 0 60px 0;
+  }
+  .int h2 {
+    height: 100px;
+    line-height: 100px;
+    font-size: 2.3rem;
+  }
+  .int .intText {
+    height: 368px;
+}
+  .int .intText h3::before {
+    left: 130px;
+  }
+  .int .intText span {
+    font-size: 1rem;
+  }
+  .ex .exText {
+    font-size: 1rem;
+    padding-top: 0px;
+}
+.guide .guLogo ul li {
+  height: 230px;
+}
+.guide {
+  margin: 35px 0 50px 0;
+  height: 500px;
+}
+.hoc .hocIcon ul li {
+  height: 160px;
+}
+}
 @media(max-width:480px){
   /* introduce */
   .int{
-    margin: 30px 0 80px 0;
+    margin: 30px 0 50px 0;
   }
   .int h2 {
     font-size: 2rem;
@@ -249,7 +296,7 @@
   .int .intText h3::before{
     width: 120px;
     bottom: -8px;
-    left: 95px;
+    left: 105px;
   }
   .int .intText span{
     margin-top: 40px;
@@ -305,4 +352,23 @@
   }
   .hoc .hocIcon ul li{
     height: 150px;
+  }
+}
+@media(max-width:390px){
+  .int .intText h3::before {
+    left: 69px;
+}
+.int .intText {
+  height: 463px;
+}
+.guide {
+  height: 480px;
+}
+.guide .guLogo ul li {
+  height: 150px;
+}
+.guide .guText {
+  top: 30%;
+}
+
 }

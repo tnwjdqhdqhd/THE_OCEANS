@@ -1,7 +1,13 @@
 @charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url(../imgs/fish-water-png-3919\ 2.svg), default;
+}
 /* banner */
 .banner{
-    width: 1920px;
+    width: 100%;
 }
 .banner img{
     width: 100%;
@@ -16,7 +22,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding-left: 350px;
 }
 .banner span b{
     font-family: 'Josefin Sans', sans-serif;

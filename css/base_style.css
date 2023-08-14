@@ -1,5 +1,11 @@
 @charset "utf-8";
-/* html{overflow-x:hidden;} */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url(../imgs/fish-water-png-3919\ 2.svg), default;
+}
+html{overflow-x:hidden;}
 #header{
     border-bottom: 1px solid #225BBF;
     position: relative;
@@ -53,10 +59,15 @@
 .header .ticket{
     width: 30%;
     height: 150px;
+    padding-left: 8%;
 }
 .header .ticket span{
     float: left;
     margin: 90px 30px 0 0;
+}
+.header .ticket span img{
+    width: 100%;
+    height: inherit;
 }
 .header .ticket span:nth-of-type(1){
     margin-left: 140px;
@@ -66,7 +77,6 @@
     margin-top: 60px;
 }
 .header .ticket span:nth-of-type(3){
-    padding-right: 60px;
     margin-right: 0;
     transition: all 0.3s;
 }
@@ -132,11 +142,13 @@
     font-weight: bold;
     padding: 15px 15px;
     color: #fff;
+    text-align: left;
 }
 #hamNav>ul>li>.submenu{
     height: auto;
     display: none;
-    background-color: #ED653E;
+    background-color: #fff;
+    /* overflow: hidden; */
 }
 #hamNav>ul>li>.submenu>li{
     border-top: 1px solid #fff;
@@ -145,17 +157,25 @@
     display: block;
     font-size: 0.875rem;
     padding: 10px 30px;
-    color: #fff;
+    color: #225BBF;
+    transition: all 0.3s;
+}
+#hamNav>ul>li>.submenu>li>a:hover{
+    color: #ED653E;
+    transform: scale(1.1);
 }
 #hamNav .hamLog{
     position: absolute;
-    bottom: 10%;
-    right: 25%;
+    bottom: 5%;
+    right: 35%;
 }
 #hamNav .hamLog a{
     color: #fff;
     font-size: 0.875rem;
     transition: all 0.3s;
+    text-align: center;
+    display: block;
+    height: 20px;
 }
 #hamNav .hamLog a:hover{
     color: #ED653E;
@@ -227,7 +247,7 @@
 }
 .nav .navbg{
     width: 100%;
-    height: 400px;
+    height: 500px;
     background-color: #fff;
     position: absolute;
     top: 80px;
