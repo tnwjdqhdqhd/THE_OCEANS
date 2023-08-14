@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팝업창</title>
+    <style>
+        input {
+            vertical-align: middle;
+        }
+
+        #layer {
+            width: 580px;
+            height: 500px;
+            position: absolute;
+            left: 30%;
+            top: 30%;
+            border-radius: 50px;
+        }
+
+        .closeLayer {
+            position: absolute;
+            bottom: 0;
+            left: 50px;
+            color: #fff;
+            text-align: left;
+        }
+
+        .closeBtn {
+            position: absolute;
+            width: 75px;
+            height: 30px;
+            background-color: #ED653E;
+            color: #fff;
+            border-radius: 10px;
+            font-size: 16px;
+            bottom: 50px;
+            left: 0px;
+            border: 0;
+        }
+    </style>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script>
+        $(function () {
+            if ($.cookie("popup") == 'none') {
+                $("#layer").hide();
+            }
+
+            var $expiresChk = $("#expiresChk")
+
+            $(".closeBtn").on("click", closePop);
+
+            function closePop() {
+                if ($expiresChk.is(":checked")) {
+                    $.cookie("popup", "none", { expires: 3, path: "/" });
+                }
+                $("#layer").fadeOut("fast");
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <div id="layer">
+        <img src="./img/POPUP.svg" alt="팝업창 배경 이미지">
+        <p class="closeLayer">
+            <input type="checkbox" name="expiresChk" id="expiresChk">
+            <label for="expiresChk">3일 동안 이 창 열지않기</label>
+            <button class="closeBtn">닫기</button>
+        </p>
+    </div>
+</body>
+
+</html>
