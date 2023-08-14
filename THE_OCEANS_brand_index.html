@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/base_style.css">
+    <link rel="stylesheet" href="./css/base_media.css">
     <link rel="stylesheet" href="./css/brand_style.css">
+    <link rel="stylesheet" href="./css/brand_media.css">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="shortcut icon" href="./images/pavicon.ico">
@@ -37,6 +39,49 @@
                 </div><!--// 클레스 헤더 끝-->
             </div><!--// 로우 끝-->
         </div><!--// 컨테이너 끝-->
+        <div id="hamBtn">
+            <span></span>
+        </div><!--// 햄버거 메뉴 버튼-->
+        <div id="hamNav">
+            <ul>
+                <li><a href="#">VISIT</a>
+                    <ul class="submenu">
+                        <li><a href="#">이용 시간</a></li>
+                        <li><a href="#">기프트샵</a></li>
+                        <li><a href="#">관람 가이드 맵</a></li>
+                        <li><a href="#">단체 예약</a></li>
+                        <li><a href="#">개인 예약</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">PROGRAM</a>
+                    <ul class="submenu">
+                        <li><a href="#">동물소개</a></li>
+                        <li><a href="#">체험 프로그램 예약</a></li>
+                        <li><a href="#">공연 티켓 예매</a></li>
+                        <li><a href="#">호텔 예약</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">BRAND</a>
+                    <ul class="submenu">
+                        <li><a href="#">회사 소개</a></li>
+                        <li><a href="#">찾아오시는 길</a></li>
+                        <li><a href="#">HELP OUR OCEANS</a></li>
+                        <li><a href="#">연혁</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">COMMUNITY</a>
+                    <ul class="submenu">
+                        <li><a href="#">자주 묻는 질문</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">이벤트</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="hamLog">
+                <a href="#">LOGIN</a>
+                <a href="#">JOIN</a>
+            </div>
+        </div><!--// 햄버거 메뉴 내용 끝-->
     </div><!--// 아이디 헤더 끝-->
     <div id="nav">
         <div class="container">
@@ -105,11 +150,12 @@
                 <div class="int clearfix">
                     <h2 data-aos="fade-in">THE OCEANS</h2><!--// 인트 로고-->
                     <div class="intImg" data-aos="slide-up"
-                    data-aos-anchor-placement="top-center" data-aos-duration="1500">
+                    data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
                         <img src="./images/introduce_img.svg" alt="브랜드 소개 이미지">
                     </div><!--// 인트 이미지-->
                     <div class="intText" data-aos="slide-up"
-                    data-aos-anchor-placement="center-center" data-aos-duration="1500">
+                    data-aos-anchor-placement="bottom-bottom" 
+                    data-aos-duration="1500">
                         <h3>브랜드 소개</h3>
                         <span>
                             <b>THE OCEANS</b> 수중 터널과 수중 호텔로 이루어진 아쿠아리움입니다. <br>
@@ -127,27 +173,27 @@
                 <div class="ex clearfix">
                     <h3 data-aos="fade-up"
                     data-aos-duration="1500">LOGO</h3>
-                    <div class="exText" data-aos="slide-up"
-                    data-aos-anchor-placement="bottom-bottom" data-aos-duration="1500">
+                    <div class="exText" data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom">
                         겉에 물결 모양은 파도가 치는 바다를 형상화했습니다. <br>
                         파도 안에 <b>THE OCEANS</b> 글자를 넣어서 <br>
                         바다 속에 있는 아쿠아리움을 표현했습니다. 
                     </div>
-                    <div class="exLogo" data-aos="slide-up"
-                    data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
+                    <div class="exLogo" data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom" data-aos-duration="1800">
                         <img src="./images/logo_color.svg" alt="하얀 배경에 파란색 로고 이미지">
                     </div>
                 </div>
                 <div class="guide">
-                    <div class="guLogo" class="exLogo" data-aos="slide-up"
-                    data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
+                    <div class="guLogo" class="exLogo" data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom">
                         <ul>
                             <li><img src="./images/logo_white.svg" alt="파란색 배경 하얀색 로고 이미지"></li>
                             <li><img src="./images/logo_color.svg" alt="하얀색 배경 파란색 로고 이미지"></li>
                         </ul>
                     </div>
-                    <div class="guText"  data-aos="slide-up"
-                    data-aos-anchor-placement="center-center" data-aos-duration="1000">
+                    <div class="guText"  data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom">
                         <h4>로고 사용 가이드</h4>
                         <span>
                             바다속에 잠긴 느낌을 표현하고 싶다면 <br>
@@ -157,7 +203,8 @@
                             사용하는 것을 추천드립니다. 
                         </span>
                         <div class="down">
-                            
+                            <span>다운로드</span>
+                            <img src="" alt="">
                         </div>
                     </div>
                 </div>
@@ -173,17 +220,17 @@
                     <div class="hocIcon">
                         <ul>
                             <li data-aos="slide-up"
-                            data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
+                            data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
                                 <img src="./images/HOC1.svg" alt="해양 보호 이미지">
                                 <span>해양 보호</span>
                             </li>
                             <li data-aos="slide-up"
-                            data-aos-anchor-placement="center-bottom" data-aos-duration="1900">
+                            data-aos-anchor-placement="top-bottom" data-aos-duration="1900">
                                 <img src="./images/HOC2.svg" alt="해양 생물 치료 이미지">
                                 <span>해양 생물 치료</span>
                             </li>
                             <li data-aos="slide-up"
-                            data-aos-anchor-placement="center-bottom" data-aos-duration="2300">
+                            data-aos-anchor-placement="top-bottom" data-aos-duration="2300">
                                 <img src="./images/HOC3.svg" alt="자연 속으로 이미지">
                                 <span>자연 속으로</span>
                             </li>
@@ -259,7 +306,10 @@
     </div><!--// 아이디 푸터 끝-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
+        AOS.init();
+
         // base
         // 네비게이션
         $(".nav>ul>li").mouseover(function(){
@@ -270,11 +320,22 @@
             $("nav>ul>li").find(".submenu").stop().slideUp(300);
             $(".navbg").stop().slideUp(300);
         });
+
+        //  햄버거 네비게이션
+        $("#hamBtn").click(function (e) {
+            e.preventDefault();
+            $("#hamNav").slideToggle("open");
+        });
+
+        $("#hamNav>ul>li").click(function (e) {
+            e.preventDefault();
+            $("#hamNav>ul>li>.submenu").stop().slideUp();
+            $(this).find(".submenu").stop().slideToggle();
+        });
     </script>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
+    <!-- <script>
         AOS.init();
-    </script>
+    </script> -->
 </body>
 </html>

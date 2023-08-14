@@ -1,0 +1,308 @@
+@charset "utf-8";
+@media(max-width:1920px){
+  .container{
+    width: 100%;
+  }
+}
+@media(max-width:1024px) {
+  /* introduce */
+  .int{
+    margin: 100px 0 125px 0;
+  }
+  .int h2 {
+    font-size: 2.7rem;
+    height: 125px;
+    line-height: 125px;
+  }
+
+  .int .intImg {
+    margin: 0 10px 0 0px;
+    width: 34%;
+    height: inherit;
+  }
+
+  .int .intText {
+    width: 64%;
+    height: 323px;
+    padding: 30px 30px;
+  }
+  .int .intText h3 {
+    font-size: 1.5rem;
+  }
+  .int .intText h3::before{
+    width: 130px;
+    bottom: -8px;
+    left: 210px;
+  }
+  .int .intText span{
+    margin-top: 30px;
+    font-size: 1.14rem;
+  }
+
+/* brandLogo */
+#brandLogo{
+  padding-top: 50px;
+} 
+.ex h3{
+  font-size: 2.7rem;
+  margin-bottom: 50px;
+}
+.ex .exText{
+  margin-left: 2%;
+  width: 64%;
+  height: 150px;
+  font-size: 1.14rem;
+  padding-top: 30px;
+}
+.ex .exLogo{
+  margin-right: 0px;
+  width: 34%;
+}
+.ex .exLogo>img{
+  width: 50%;
+}
+.guide{
+  margin: 100px 0 100px 0;
+  height: 650px;
+} 
+.guide .guLogo ul{
+  padding-left: 20%;
+}
+.guide .guLogo ul li{
+  width: 30%;
+  height: 280px;
+}
+.guide .guLogo ul li:nth-of-type(1){
+  margin-right: 30px;
+}
+.guide .guText{
+  padding-top: 20px;
+  top: 50%;
+  right: 40%;
+  transform: translate(-50%, -50%);
+}
+.guide .guText h4{
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+.guide .guText h4::before{
+  width: 180px;
+}
+.guide .guText span{
+  font-size: 1.14rem;
+}
+.guide .guText .down{
+  width: 120px;
+  border-radius: 70px;
+}
+.guide .guText .down>span{
+  padding: 12% 0 0 10%;
+  font-size: 1.14rem;
+}
+
+/* help_our_oceans */
+.hoc{
+  margin-bottom: 50px;
+}
+.hoc h3{
+  font-size: 2.7rem;
+  padding-bottom: 50px;
+}
+.hoc .hocIcon{
+  margin-left: 0px;
+}
+.hoc .hocIcon ul li{
+  float: left;
+  width: 30%;
+  height: 250px;
+  margin-right: 5%;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.hoc .hocIcon ul li:nth-of-type(1){
+  padding: 0px;
+}
+.hoc .hocIcon ul li:nth-of-type(2){
+  padding: 0px;
+}
+.hoc .hocIcon ul li:nth-of-type(3){
+  margin-right: 0;
+  padding: 0px;
+}
+.hoc .hocIcon ul li img{
+  width: 60%;
+}
+.hoc .hocIcon ul li span{
+  font-size: 1.14rem;
+  bottom: 3%;
+  white-space: nowrap;
+}
+
+
+}
+@media(max-width:768px){
+  /* introduce */
+  .int{
+    margin: 50px 0 100px 0;
+  }
+  .int h2 {
+    font-size: 2.5rem;
+  }
+  .int .intImg {
+    margin: 0 0 20px 25%;
+    width: 50%;
+  }
+  .int .intText {
+    width: 80%;
+    height: 320px;
+    padding: 30px 30px;
+    margin-left: 10%;
+  }
+  .int .intText h3 {
+    font-size: 1.4rem;
+  }
+  .int .intText h3::before{
+    width: 115px;
+    bottom: -8px;
+    left: 190px;
+  }
+  .int .intText span{
+    margin-top: 20px;
+    font-size: 1.1rem;
+  }
+
+  /* brandLogo */
+  #brandLogo{
+    padding-top: 0px;
+  } 
+  .ex h3{
+    font-size: 2.5rem;
+  }
+  .ex .exText{
+    margin-left: 10%;
+    font-size: 1.1rem;
+    padding-top: 25px;
+    width: 50%;
+  }
+  .guide{
+    margin: 80px 0 50px 0;
+    height: 600px;
+  } 
+  .guide .guLogo ul{
+    padding-left: 13%;
+  }
+  .guide .guLogo ul li{
+    width: 40%;
+    height: 280px;
+  }
+  .guide .guLogo ul li:nth-of-type(1){
+    margin-right: 6%;
+  }
+  .guide .guText{
+    right: 40%;
+  }
+  .guide .guText h4{
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+  }
+  .guide .guText h4::before{
+    width: 170px;
+  }
+  .guide .guText span{
+    font-size: 1.1rem;
+  }
+  .guide .guText .down{
+    right: -50%;
+    bottom: 0%;
+  }
+  .guide .guText .down>span{
+    font-size: 1.1rem;
+  }
+
+  /* help_our_oceans */
+  .hoc h3{
+    font-size: 2.5rem;
+  }
+}
+@media(max-width:480px){
+  /* introduce */
+  .int{
+    margin: 30px 0 80px 0;
+  }
+  .int h2 {
+    font-size: 2rem;
+  }
+  .int .intImg {
+    margin: 0 0 15px 25%;
+    width: 50%;
+  }
+  .int .intText {
+    height: 420px;
+    padding: 20px 20px;
+    margin-left: 10%;
+  }
+  .int .intText h3 {
+    font-size: 1.4rem;
+  }
+  .int .intText h3::before{
+    width: 120px;
+    bottom: -8px;
+    left: 95px;
+  }
+  .int .intText span{
+    margin-top: 40px;
+    font-size: 1rem;
+  }
+
+  /* brandLogo */
+  .ex h3{
+    font-size: 2rem;
+  }
+  .ex .exText{
+    margin-left: 10%;
+    padding-top: 40%;
+    width: 80%;
+  }
+  .ex .exLogo{
+    width: 90%;
+    position: absolute;
+    top: 8%;
+    left: 36%;
+  }
+  .ex .exLogo>img{
+    width: 30%;
+  }
+  .guide{
+    margin: 150px 0 20px 0;
+    height: 600px;
+  } 
+  .guide .guLogo ul li{
+    height: 200px;
+  }
+  .guide .guText{
+    right: 20%;
+  }
+  .guide .guText h4{
+    font-size: 1.4rem;
+  }
+  .guide .guText span{
+    font-size: 1rem;
+  }
+  .guide .guText .down{
+    right: -15%;
+    bottom: -40%;
+  }
+  .guide .guText .down>span{
+    font-size: 1rem;
+  }
+
+  /* help_our_oceans */
+  .hoc h3{
+    font-size: 2rem;
+    padding-bottom: 20px;
+  }
+  .hoc .hocIcon ul li{
+    height: 150px;
+}
